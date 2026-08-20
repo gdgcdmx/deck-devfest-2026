@@ -44,7 +44,11 @@ export const Slide9Process: React.FC<Slide9ProcessProps> = ({ onOpenSponsorModal
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mt-6">
           {steps.map((step, idx) => (
-            <div key={idx} className="clean-card p-5 text-center flex flex-col items-center justify-between shadow-xs">
+            <button
+              key={idx}
+              onClick={onOpenSponsorModal}
+              className="clean-card p-5 text-center flex flex-col items-center justify-between shadow-xs hover:border-blue-400 transition-all cursor-pointer"
+            >
               <div className="w-10 h-10 rounded-full bg-slate-100 border border-slate-200 flex items-center justify-center font-bold text-slate-800 text-lg mb-3">
                 {step.number}
               </div>
@@ -54,7 +58,7 @@ export const Slide9Process: React.FC<Slide9ProcessProps> = ({ onOpenSponsorModal
               <p className="text-xs text-slate-600 leading-relaxed">
                 {step.subtitle}
               </p>
-            </div>
+            </button>
           ))}
         </div>
       </div>

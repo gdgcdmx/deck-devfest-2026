@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Sparkles, Mail, MapPin, Calendar, Users } from 'lucide-react';
+import { ArrowRight, Sparkles, Mail, MapPin, Users } from 'lucide-react';
 import { COMMUNITY_DATA } from '../../data/community';
 
 interface Slide1HeroProps {

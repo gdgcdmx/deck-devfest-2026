@@ -1,5 +1,5 @@
 import React from 'react';
-import { Check, Sparkles, Star } from 'lucide-react';
+import { Check, Sparkles } from 'lucide-react';
 import type { Currency, SponsorTier } from '../../types';
 import { SPONSOR_TIERS } from '../../data/tiers';
 
