@@ -1,0 +1,113 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --google-blue: #4285f4;
+    --google-red: #ea4335;
+    --google-yellow: #fbbc05;
+    --google-green: #34a853;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; /* Clean light background */
+    color: #1e293b;
+    font-family: 'Plus Jakarta Sans', 'Roboto', 'Lato', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    overflow: hidden;
+  }
+}
+
+/* Google 4-Color Top & Bottom Strip */
+.google-4-color-bar {
+  background: linear-gradient(
+    90deg, 
+    #4285f4 0%, #4285f4 25%, 
+    #ea4335 25%, #ea4335 50%, 
+    #fbbc05 50%, #fbbc05 75%, 
+    #34a853 75%, #34a853 100%
+  );
+}
+
+/* Clean White Card with subtle shadow & borders */
+.clean-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px -2px rgba(0, 0, 0, 0.05);
+}
+
+.clean-card-hover {
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clean-card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -6px rgba(0, 0, 0, 0.08);
+  border-color: #cbd5e1;
+}
+
+/* Google Colored Accent Borders */
+.border-accent-blue {
+  border-left: 4px solid #4285f4;
+}
+
+.border-accent-red {
+  border-left: 4px solid #ea4335;
+}
+
+.border-accent-yellow {
+  border-left: 4px solid #fbbc05;
+}
+
+.border-accent-green {
+  border-left: 4px solid #34a853;
+}
+
+.border-top-blue {
+  border-top: 4px solid #4285f4;
+}
+
+.border-top-red {
+  border-top: 4px solid #ea4335;
+}
+
+.border-top-yellow {
+  border-top: 4px solid #fbbc05;
+}
+
+.border-top-green {
+  border-top: 4px solid #34a853;
+}
+
+/* Custom scrollbar for light theme */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Subtle background grid pattern for clean look */
+.bg-light-pattern {
+  background-image: 
+    linear-gradient(to right, rgba(0, 0, 0, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
